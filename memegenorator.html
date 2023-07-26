@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meme Generator</title>
+  <link rel="stylesheet" type="text/css" href="memegenorator.css">
+</head>
+<body>
+    <h1>Meme Generator</h1>
+  <div class="form-container">
+    <form id="memeForm">
+      <label for="imageURL">Image URL:</label>
+      <input type="text" id="imageURL" required>
+
+      <label for="topText">Top Text:</label>
+      <input type="text" id="topText">
+
+      <label for="bottomText">Bottom Text:</label>
+      <input type="text" id="bottomText">
+
+      <label for="textColor">Text Color:</label>
+      <input type="color" id="textColor" value="#ffffff">
+      <div id="colorPreview"></div>
+
+      <button type="submit">Generate Meme</button>
+    </form>
+  </div>
+
+  <div id="memeContainer"></div>
+
+  <script src="memegenorator.js"></script>
+</body>
+</html>
