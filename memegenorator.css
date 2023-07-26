@@ -1,0 +1,165 @@
+body {
+  background-color: #F9F9F9;
+  color: #000000;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 100px;
+  font-family: "Comic Sans MS", cursive;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #000000;
+}
+
+input[type="text"],
+input[type="color"],
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #CCCCCC;
+  color: #000000;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: "Comic Sans MS", cursive;
+}
+
+input[type="color"] {
+  width: 420px;
+}
+
+button {
+  background-color: #000000;
+  cursor: pointer;
+  width: 420px;
+  color: #FFFFFF;
+}
+
+
+button span {
+  visibility: hidden;
+}
+
+button:hover {
+  background-color: #555555;
+}
+
+button:hover span {
+  visibility: visible;
+}
+
+.meme-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh; 
+  overflow-y: auto; 
+}
+
+.meme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.meme img {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.meme .text-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.meme .text-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meme .text-container .top-text {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.meme .text-container .bottom-text {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.meme .remove-button {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+h1,
+label,
+input[type="text"],
+button {
+  font-family: "Comic Sans MS", cursive;
+}
+
+input[type="text"]:hover,
+button:hover {
+  background-color: #999999;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 100px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
